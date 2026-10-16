@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jericho M. Candiza — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="https://googleapis.com">
+    <link rel="stylesheet" href="style.css" />
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "6rvmXS080E2XcfucY",
+      });
+   })();
+</script>
+  </head>
+  <body>  
+    <div id="progress-bar"></div>
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="#home" class="nav-logo">
+          <span class="logo-icon">&#9670;</span> Jericho
+        </a>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" aria-label="Toggle theme">
+            <img class="night" src="image/contra.png">
+          </button>
+          <button class="nav-hamburger" aria-label="Menu">☰</button>
+        </div>
+      </div>
+    </nav>
+
+    <header id="home" class="hero">
+      <div class="hero-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-avatar" id="avatar"></div>
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Jericho M. Candiza</h1>
+        <div class="hero-type-wrapper">
+          <span class="hero-type-prefix">I build </span>
+          <span class="hero-type" id="typewriter"></span>
+          <span class="hero-cursor">|</span>
+        </div>
+        <p class="hero-bio">
+          Aspiring software engineer passionate about creating efficient,
+          real-world solutions through clean code and continuous learning.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>&#8595;</span> View My Work
+          </a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+          <button class="btn btn-outline" onclick="openResume()">View Resume &#8599;</button>
+           <div id="resumeOverlay">
+          <button class="resumeClose btn-outline" onclick="closeResume()">&times;</button>
+          <img class="resumeImg"  id="resumeImg" src="" alt="Resume">
+        </div>
+        <div class="hero-scroll">
+          <span class="scroll-mouse"><span class="scroll-dot"></span></span>
+        </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="section">
+      <div class="section-inner">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text fade-up">
+            <p>
+              I'm a student at <strong>ICCT Colleges</strong> pursuing a degree
+              in <strong>Information Technology</strong>. I specialize in
+              <strong>Web developing</strong>
+              and enjoy building user-friendly websites that solve everyday
+              problems.
+            </p>
+            <p>
+              My recent project — a
+              <strong>Lost and Found Management System</strong> — integrates SMS
+              OTP verification via Twilio with a MySQL backend, showcasing my
+              ability to connect hardware-backed logic with real-world API
+              workflows.
+            </p>
+            <p>
+              When I'm not coding, I explore IoT, Arduino, and web technologies, and experiment with
+              UI/UX design, and contribute to open-source tools.
+            </p>
+          </div>
+          <div class="about-stats fade-up">
+            <div class="stat">
+              <span class="stat-num">3</span
+              ><span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">4</span
+              ><span class="stat-label">Tech Stacks</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">2</span
+              ><span class="stat-label">Year Coding</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+      <div class="section-inner">
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+
+        <div class="skill-category fade-up">
+          <h3 class="skill-cat-title">Programming Languages</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <img class="skill-icon" src="image/c++.png" />
+              <h4>C++</h4>
+              <div class="skill-bar">
+                <span class="skill-fill-1" style="width: 80%"></span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <img class="skill-icon" src="image/javascript-logo.webp " />
+              <h4>JavaScript</h4>
+              <div class="skill-bar">
+                <span class="skill-fill-2" style="width: 20%"></span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <a href="#arduino-proj">
+                <img class="skill-icon" src="image/C.png" /></a>
+              <h4>C</h4>
+              <div class="skill-bar">
+                <span class="skill-fill-3" style="width: 20%"></span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <img class="skill-icon" src="image/python.png" />
+              <h4>Python</h4>
+              <div class="skill-bar">
+                <span class="skill-fill-4" style="width: 20%"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category fade-up">
+          <h3 class="skill-cat-title">Web &amp; Database</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <img class="skill-icon" src="image/image-removebg-preview.png" />
+              <h4>HTML / CSS</h4>
+              <div class="skill-bar">
+                <span class="skill-fill-5" style="width: 89%"></span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <img class="skill-icon" src="image/mysql.png" />
+              <h4>MySQL</h4>
+              <div class="skill-bar">
+                <span class="skill-fill-6" style="width: 72%"></span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <img class="skill-icon" src="image/api.png" />
+              <h4>REST APIs</h4>
+              <div class="skill-bar">
+                <span class="skill-fill-7" style="width: 20%"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category fade-up">
+          <h3 class="skill-cat-title">Tools &amp; Platforms</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <img class="skill-icon" src="image/github.png" />
+              <h4>GitHub</h4>
+              <div class="skill-bar">
+                <span class="skill-fill-8" style="width: 75%"></span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <img class="skill-icon" src="image/vscode.png" />
+              <h4>VSCode</h4>
+              <div class="skill-bar">
+                <span class="skill-fill-9" style="width: 85%"></span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <img class="skill-icon" src="image/vsc.png" />
+              <h4>Visual Studio</h4>
+              <div class="skill-bar">
+                <span class="skill-fill-10" style="width: 55%"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-inner">
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="projects-grid">
+          <article class="project-card fade-up">
+            <div class="project-img">
+              <div
+                class="project-img-placeholder"
+                style="background: linear-gradient(135deg, #1e4a7a, #0f2b47)"
+              >
+                <span>?</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">Desktop App &middot; 2026</div>
+              <h3>Lost &amp; Found Management System</h3>
+              <p>
+                C++ system with SMS OTP verification via Twilio Verify API and
+                MySQL persistence. Supports item reporting, keyword matching,
+                and secure claims workflow.
+              </p>
+              <div class="project-tags">
+                <span>C++</span><span>MySQL</span><span>Twilio</span
+                ><span>cURL</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link"></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-up">
+            <div class="project-img">
+              <div
+                class="project-img-placeholder"
+                style="background: linear-gradient(135deg, #0f2b47, #1e4a7a)"
+              >
+                <span>&lt;/&gt;</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">Web &middot; 2026</div>
+              <h3>Personal Portfolio</h3>
+              <p>
+                Responsive dark/light mode portfolio with smooth animations,
+                Intersection Observer scroll effects, and clean typography —
+                built entirely with vanilla HTML, CSS, and JavaScript.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link"></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-up">
+            <div id="arduino-proj" class="project-img">
+              <div
+                class="project-img-placeholder">
+                <img src="image/achieve.jpg";</div>
+                <span></span>
+              </div>  
+            </div>
+            <div class="project-body">
+              <div class="project-meta">Arduino &middot; 2025</div>
+              <h3>Flame detector & smoke sensor with alarm system.</h3>
+              <p>
+                C-based Arduino project that detects flames and smoke,
+                triggering an alarm system for safety. Ideal for home security
+                and fire prevention applications.
+              </p>
+              <div class="project-tags">
+                <span>C</span><span>Arduino</span><span>Embedded</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link"></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="section-inner">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-intro">
+          Have a question, idea, or just want to say hi? Fill out the form below
+          or reach me directly.
+        </p>
+
+        <div class="contact-grid">
+          <form
+            class="contact-form fade-up"
+            id="form"
+            POST ="https://api.emailjs.com/api/v1.0/email/send-form"
+          >
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="John Doe"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="john@example.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="What's this about?"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                rows="5"
+                placeholder="Write your message here..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="sendEmail()">Send Message</button>
+          </form>
+         
+
+          <div class="contact-info fade-up">
+            <div class="contact-card">
+              <span class="contact-icon"><i class="fa-regular fa-envelope"></i></span>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:jerichomaquiras@gmail.com"
+                  >jerichomaquiras@gmail.com</a
+                >
+              </div>
+            </div>
+            <div class="contact-card">
+              <span class="contact-icon"><i class="fab fa-github" ></i></span>
+            
+              <div>
+                <strong>GitHub</strong>
+                <a href="https://github.com/jrichoo" target="_blank"
+                  >github.com/jrichoo</a
+                >
+              </div>
+            </div>
+            <div class="contact-card">
+              <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+              <div>
+                <strong>Phone</strong>
+                <span>+63 908 343 8519</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-icon">&#9670;</span> Jericho M. Candiza
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <p class="footer-copy">
+          &copy; 2026 Jericho M. Candiza. Built with &#9829; and vanilla JS.
+        </p>
+      </div>
+    </footer>
+
+    <button id="scroll-top" aria-label="Scroll to top">&#8593;</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
